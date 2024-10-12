@@ -38,6 +38,15 @@ public class ProductService {
 
     }
 
+    public void deleteProduct(int prodId) {
+        int index = 0;
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getProdId() == prodId) {
+                index = i;
+            }
+        }
+        products.remove(index);
+    }
 
 
 }
