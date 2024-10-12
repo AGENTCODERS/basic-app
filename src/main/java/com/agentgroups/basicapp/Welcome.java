@@ -10,4 +10,9 @@ public class Welcome {
     public String greet(){
         return "Welcome to agentesports.in";
     }
+
+    @RequestMapping("/about")
+    public String about(){
+        return "About Page under Construction..........";
+    }
 }
