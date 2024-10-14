@@ -23,7 +23,7 @@ public class ProductService {
 
 
     public Product getProductById(int prodId){
-        return productRepo.findById(prodId).orElse(new Product(prodId,"no items found",00));
+        return productRepo.findById(prodId).orElse(new Product());
     }
 
     public void addProduct(Product prod){
