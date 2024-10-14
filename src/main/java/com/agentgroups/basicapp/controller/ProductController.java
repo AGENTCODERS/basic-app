@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class ProductController {
 
     @Autowired
